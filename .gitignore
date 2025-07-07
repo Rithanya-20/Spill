@@ -17,6 +17,7 @@ npm-debug.log*
 # Ignore environment variables
 frontend/.env
 backend/.env
+.env
 
 # Ignore OS files
 .DS_Store
