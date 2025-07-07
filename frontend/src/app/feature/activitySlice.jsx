@@ -9,7 +9,7 @@ export const postActivity = createAsyncThunk(
     async(postData, thunkAPI) => {
     
         try {
-            const response = await fetch(`http://localhost:5000/api/users/${postData.userId}`, {
+            const response = await fetch(`https://spill-r5k1.onrender.com/api/users/${postData.userId}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -32,7 +32,7 @@ export const updateActivity = createAsyncThunk(
     async(postData, thunkAPI) => {
     
         try {
-            const response = await fetch(`http://localhost:5000/api/users/${postData.userId}`, {
+            const response = await fetch(`https://spill-r5k1.onrender.com/api/users/${postData.userId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -54,7 +54,7 @@ export const getActivity = createAsyncThunk(
     async(_, thunkAPI) => {
         try {
 
-            const response = await fetch('http://localhost:5000/api/users/activity' )
+            const response = await fetch('https://spill-r5k1.onrender.com/api/users/activity' )
 
             const res = await response.json()
             return res

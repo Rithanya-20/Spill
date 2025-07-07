@@ -5,7 +5,7 @@ export const savePostInFile = createAsyncThunk(
     async(postData, thunkAPI) => {
         try {
 
-            const response = await fetch('http://localhost:5000/api/posts', {
+            const response = await fetch('https://spill-r5k1.onrender.com/api/posts', {
                 method: 'POST',
                 headers: {
                     'Content-Type' : 'application/json'
@@ -30,7 +30,7 @@ export const getFromPosts = createAsyncThunk(
     async(_, thunkAPI) => {
         try {
 
-            const response = await fetch('http://localhost:5000/api/getPosts' )
+            const response = await fetch('https://spill-r5k1.onrender.com/api/getPosts' )
 
             const res = await response.json()
             return res
@@ -46,7 +46,7 @@ export const updatePost = createAsyncThunk(
     async(postData, thunkAPI) => {
         try {
 
-            const response = await fetch(`http://localhost:5000/api/posts/${postData.postId}`, {
+            const response = await fetch(`https://spill-r5k1.onrender.com/api/posts/${postData.postId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -68,7 +68,7 @@ export const addComment = createAsyncThunk(
     async(postData, thunkAPI) => {
         try {
 
-            const response = await fetch(`http://localhost:5000/api/comment/${postData.postId}`, {
+            const response = await fetch(`https://spill-r5k1.onrender.com/api/comment/${postData.postId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
