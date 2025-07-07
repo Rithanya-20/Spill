@@ -1,0 +1,42 @@
+.comments{
+    color: #939292;
+    font-size: 12px;
+   
+    
+}
+
+.comment-section {
+    display: none;
+    
+    height: auto;
+    width: auto;
+    /* border: 1px solid slateblue; */
+    margin-top: 5px;
+    box-shadow: 1px 1px 3px 1px #ccc;
+    
+
+}
+.comment-section.true{
+    display: block;
+}
+
+p {
+    margin: 2px;
+    /* font-size: 8px; */
+}
+
+.comment-input {
+    width: 30vw;
+    height: 4vh;
+    padding: 2px;
+    margin: 3px;
+    font-size: 10px;
+
+}
+
+.add-comment-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}

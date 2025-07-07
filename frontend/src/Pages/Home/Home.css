@@ -1,0 +1,91 @@
+textarea {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    outline: none;
+    border-radius: 5px;
+    width: 30vw;
+}
+
+textarea:focus {
+    border-color: slateblue;
+}
+@media (max-width: 650px) {
+    textarea {
+        width: 60vw !important;
+    }
+}
+
+.partition {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+    align-items: center;
+
+}
+
+.post-section {
+    background-color: rgb(206, 227, 248);
+    display: flex;
+    padding: 2rem 0px;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.headline {
+    text-align: center;
+    font-size: larger;
+
+
+}
+
+.posted-section {    
+  width: 100%;
+ 
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: x-large;
+    margin-bottom: 15px;
+}
+
+
+@keyframes highlightFade {
+  0%   { background-color: transparent; }
+  100% { background-color: yellow; }
+}
+
+.highlight-animate {
+  animation: highlightFade 2s ease-out forwards;
+}
+
+
+
+@keyframes pulseHighlight {
+  0% { background-color: #ffff99; }
+  50% { background-color: #ffeb3b; }
+  100% { background-color: #ffff99; }
+}
+
+.pulse-highlight {  
+  line-height: 50px;
+  padding: 0.5rem;
+  animation: pulseHighlight 1.5s ease-in-out infinite;
+}
+
+.logout-section:hover {
+    transform: scale(0.98);
+    transition: transform 0.3 ease;
+}
